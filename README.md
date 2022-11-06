@@ -1,3 +1,5 @@
+# WARNING : While doing the homework, I used version 13.4.1 of Xcode 
+
 # First-Week-Homework
 
 1- Palindrome. Verilen Stringin palindrome olup olmadığını kontrol eden bir fonksiyon yazınız.
