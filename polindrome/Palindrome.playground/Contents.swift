@@ -7,12 +7,12 @@ func isPolindrom(word: String) -> Bool {
     var endIdx = word.count - 1
     var letterCharForward: Character
     var letterCharBack: Character
-    let upperCaseWord = word.lowercased()
-    while(startIdx < upperCaseWord.count) {
-        let forwardIdx = upperCaseWord.index(upperCaseWord.startIndex, offsetBy: startIdx)
-        let backIdx = upperCaseWord.index(upperCaseWord.startIndex, offsetBy: endIdx)
-        letterCharForward = upperCaseWord[forwardIdx]
-        letterCharBack = upperCaseWord[backIdx]
+    let lowerCaseWord = word.lowercased()
+    while(startIdx < lowerCaseWord.count) {
+        let forwardIdx = lowerCaseWord.index(lowerCaseWord.startIndex, offsetBy: startIdx)
+        let backIdx = lowerCaseWord.index(lowerCaseWord.startIndex, offsetBy: endIdx)
+        letterCharForward = lowerCaseWord[forwardIdx]
+        letterCharBack = lowerCaseWord[backIdx]
         if letterCharBack != letterCharForward {
             return false
         }
